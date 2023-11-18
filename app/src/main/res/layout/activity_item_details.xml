@@ -1,0 +1,53 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ItemDetailsActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/itemDetailTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:textAllCaps="true"
+            android:paddingTop="15dp"
+            android:gravity="center"
+            android:layout_below="@id/itemDetailImage" />
+
+
+        <ImageView
+            android:id="@+id/itemDetailImage"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Item Details Image"/>
+
+        <TextView
+            android:id="@+id/itemDetailText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/itemDetailTextName"
+            android:padding="16dp"
+            android:gravity="center"
+            android:textSize="25sp"/>
+
+        <Button
+            android:id="@+id/backButton"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:text="Back"
+            android:layout_below="@id/itemDetailText"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textSize="20dp"
+            android:onClick="goBack"/>
+
+    </RelativeLayout>
+
+</ScrollView>
